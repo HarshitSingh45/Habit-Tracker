@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-
+// Navbar componnet
 function Navbar() {
   return (
     <div style={styles.navbar}>

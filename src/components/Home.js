@@ -1,20 +1,25 @@
 import { Link } from 'react-router-dom';
-
+// home page
 function Home() {
   return (
     <div>
         <br /> <br />
+        {/* logo */}
         <div style={styles.logo}>
             <h1 style={styles.logotitle}>Habitify</h1>
         </div>
+        {/* headings */}
         <h1 style={styles.heading}>Habitify - Best App to track down all your habits</h1>
         <div style={styles.desc}>
             <p>Habitify is a free and interactive web application to add and view all your habits, you'll get flexibility to update daily status of your habit at any time</p>
         </div>
+        {/* buttons */}
         <div style={styles.buttons}>
+            {/* add button to add new habits */}
             <Link to='/add' >
                 <button style={styles.button}>Add Habit</button>
             </Link>
+            {/* button to view all habits */}
             <Link to='/habits' >
                 <button style={styles.button}>View Habits</button>
             </Link>

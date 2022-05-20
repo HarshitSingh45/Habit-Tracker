@@ -6,9 +6,11 @@ import { configureStore } from './store';
 import {Provider} from 'react-redux';
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// defining store
 const store = configureStore();
-console.log('store', store.getState( ));
+// console.log('store', store.getState( ));
 root.render(
+  // wrapping app into provider such the state will be accessible to all the components
   <Provider store = {store}>
   <React.StrictMode>
     <App />

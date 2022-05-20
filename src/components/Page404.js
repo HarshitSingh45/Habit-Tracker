@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-
+// if wrong url is enterd by the user we will display this page
 function Page404() {
   return (
     <div style={{textAlign: 'center', marginTop: 50}}>

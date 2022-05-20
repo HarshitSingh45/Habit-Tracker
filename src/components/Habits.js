@@ -4,32 +4,27 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchHabits, addHabits } from '../actions/habits'
 import Habit from './Habit';
 
+// habit component will contain all the habits 
 function Habits() {
-//   const [title, setTitle] = useState('');
+  // disptavh to dispatch an action
   const dispatch = useDispatch();
+  // whenever habits state is change it will be changed here to 
   const habits = useSelector((state) => state.habits.habits);
-  // console.log('HABITS : ',habits);
+
   useEffect(() => {
+    // dispatching an action to fetch all habits from the state
     dispatch(fetchHabits());
   },[dispatch])
-//   const onClickSubmit = (e) => {
-//     e.preventDefault();
-//     dispatch(addHabits(title));
-
-//   }
 
   return (
     <div>
-      {/* <h2>create habit</h2>
-      <form onSubmit={onClickSubmit}>
-        <input type="text" value = {title} onChange = {(e) => setTitle(e.target.value)} />
-        <input type="submit" value="Submit" />
-      </form> */}
       {habits.length === 0 
                 ? 
                 <>
+                {/* if no habits are added */}
                 <div style={styles.noHabitDiv}>
                 <h1 style={styles.nohabit}>No Habits Added yet !!</h1>
+                {/* button to add new hbait */}
                 <Link to='/add'>
                     <button style={styles.button}>Add Habit</button>
                 </Link>
@@ -37,7 +32,9 @@ function Habits() {
                 </> 
                 : 
                 <>
+                    {/* if state contains habits */}
                     <h1 style={{textAlign: 'center'}}>Your Daily Habits :) </h1>
+                    {/* rendering all Habit component */}
                     {habits.map((habit, index) => {
                         return (
                         <Habit habit={habit} key={index}/>
