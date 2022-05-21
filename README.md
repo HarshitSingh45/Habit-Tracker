@@ -1,4 +1,4 @@
-reacthabittracker.herokuapp.com/
+Open (reacthabittracker.herokuapp.com/)
 
 # Getting Started with Create React App
 
