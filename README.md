@@ -1,4 +1,83 @@
-reacthabittracker.herokuapp.com/
+
+# Habit Tracker
+
+Habit Tracker is a web app made using react, this app helps users in creating new habits. Using this app users can change their daily status of habits, this helps in keeping past records. State of this project is managed by redux.
+
+## How to setup the project on local system
+
+To setup this project, run the following commands on your terminal
+
+ 1. Clone the project
+
+```bash
+https://github.com/HarshitSingh45/Habit-Tracker.git
+```
+
+2. Change directory to Habit-Tracker 
+
+```bash
+cd habit-tracker/
+```
+
+3. Install all depedencies
+
+```bash
+npm i --save
+```
+
+4. Run the project
+
+```bash
+npm start
+```
+
+## Features
+
+- User can create new habit.
+- User can view all habits at one common page
+- User can change status of their daily habit status
+- User can keep record of their habits whether done or not
+- Used routes for accessing different pages
+- State is managed by redux
+
+
+
+## Directory Structure
+
+```
+.
+├── README.md
+├── package-lock.json
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+└── src
+    ├── actions
+    │   ├── actionTypes.js
+    │   └── habits.js
+    ├── components
+    │   ├── Addhabit.js
+    │   ├── App.js
+    │   ├── Day.js
+    │   ├── Habit.js
+    │   ├── Habits.js
+    │   ├── Home.js
+    │   ├── Navbar.js
+    │   └── Page404.js
+    ├── index.css
+    ├── index.js
+    ├── reducers
+    │   ├── habits.js
+    │   └── index.js
+    └── store
+        └── index.js
+
+```
 
 # Getting Started with Create React App
 
